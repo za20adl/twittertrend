@@ -25,7 +25,7 @@ pipeline{
             }
         }
 
-       /*stage ("Sonar Analysis") {
+       stage ("Sonar Analysis") {
             environment {
                scannerHome = tool 'valaxy-sonarscanner'
             }
@@ -51,7 +51,7 @@ pipeline{
                   echo '<--------------- Sonar Gate Analysis Ends  --------------->'
                 }
             }
-        } */
+        } 
 
          stage("Jar Publish") {
         steps {
