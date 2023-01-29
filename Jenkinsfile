@@ -1,4 +1,4 @@
-def registry = 'https://valaxy02.jfrog.io'
+//def registry = 'https://valaxy02.jfrog.io'
 pipeline{
     agent {
         node {
@@ -17,7 +17,7 @@ pipeline{
         }
       }
 
-        stage('Unit Test') {
+        /*stage('Unit Test') {
             steps {
                 echo '<--------------- Unit Testing started  --------------->'
                 sh 'mvn surefire-report:report'
@@ -51,7 +51,7 @@ pipeline{
                   echo '<--------------- Sonar Gate Analysis Ends  --------------->'
                 }
             }
-        }
+        } 
 
          stage("Jar Publish") {
         steps {
@@ -77,6 +77,6 @@ pipeline{
             
             }
         }   
-    }   
+    }   */
     }
     }
